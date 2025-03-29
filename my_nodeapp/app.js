@@ -2,7 +2,7 @@
 const http = require('http');
 
 // Define hostname and port
-const hostname = '127.0.0.1';
+const hostname = '0.0.0.0';
 const port = 3000;
 
 // Create the HTTP server
@@ -125,3 +125,4 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+module.exports = server;

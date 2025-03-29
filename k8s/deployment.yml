@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my_nodeapp
+  namespace: my_nodeapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my_nodeapp
+  template:
+    metadata:
+      labels:
+        app: my_nodeapp
+    spec:
+      containers:
+        - name: my_nodeapp
+          image: sureshkapileswarapudummy.azurecr.io/my_nodeapp:latest
+          ports:
+            - containerPort: 80

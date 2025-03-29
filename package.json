@@ -1,0 +1,19 @@
+{
+  "name": "my_nodeapp",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node my_nodeapp/app.js",
+    "test": "jest my_nodeapp/app.test.js",
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^9.23.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  }
+}
